@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumes Latinos - Empleado del Mes</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Perfumes Latinos - Empleado del Mes</h1>
+  
+    <div id="juana">
+        <h2>Vendedor Juana</h2>
+        <label for="juana-aqua">Aqua:</label>
+        <input type="number" id="juana-aqua">
+        <label for="juana-emocion">Emoción:</label>
+        <input type="number" id="juana-emocion">
+        <label for="juana-alegria">Alegría:</label>
+        <input type="number" id="juana-alegria">
+        <label for="juana-frescura">Frescura:</label>
+        <input type="number" id="juana-frescura">
+        <button onclick="calcularTotalRecaudado('juana')">Calcular</button>
+        <p id="juana-total"></p>
+    </div>
+  
+    <div id="pedro">
+        <h2>Vendedor Pedro</h2>
+        <label for="pedro-aqua">Aqua:</label>
+        <input type="number" id="pedro-aqua">
+        <label for="pedro-emocion">Emoción:</label>
+        <input type="number" id="pedro-emocion">
+        <label for="pedro-alegria">Alegría:</label>
+        <input type="number" id="pedro-alegria">
+        <label for="pedro-frescura">Frescura:</label>
+        <input type="number" id="pedro-frescura">
+        <button onclick="calcularTotalRecaudado('pedro')">Calcular</button>
+        <p id="pedro-total"></p>
+    </div>
+  
+    <button onclick="determinarEmpleadoDelMes()">Determinar Empleado del Mes</button>
+    <p id="empleado-mes"></p>
+</body>
+</html>
